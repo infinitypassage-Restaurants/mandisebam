@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mandi sebam - Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <i class="fas fa-utensils loader-icone"></i>
+      <p>Mandi sebam</p>
+      <div class="loader-ellipses">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <header class="bg-white">
+      <div class="container header my-3 d-none d-lg-flex">
+        <div class="logo">
+          <a href="./index.html">
+            <i class="fa fa-utensils me-3 text-dark"></i>
+            <h1 class="mb-0 text-dark">Mandi sebam</h1>
+          </a>
+        </div>
+        <div class="menus">
+          <ul class="d-flex mb-0">
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./reservation.html"
+                >Reservation</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./menu.html"
+                >Menu</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4 text-dark" href="./contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <a class="text-decoration-none" id="searchBtn" href="#">
+            <i class="fa fa-search me-3 text-dark"></i>
+          </a>
+          <a class="text-decoration-none" id="shoppingbutton" href="#">
+            <i class="fa fa-shopping-bag me-3 text-dark"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-around py-3 align-items-center d-lg-none">
+        <div id="hamburger">
+          <i class="fa fa-2x fa-bars me-3 text-dark"></i>
+        </div>
+        <div class="mobile-nav-logo">
+          <div class="logo">
+            <a href="./index.html">
+              <i class="fa fa-utensils me-3 text-dark"></i>
+              <h1 class="mb-0 text-dark">Mandi sebam</h1>
+            </a>
+          </div>
+        </div>
+        <div class="mobile-nav-icons">
+          <div class="icons">
+            <a class="text-decoration-none" id="searchBtnMobile" href="#">
+              <i class="fa fa-search me-3 text-dark"></i>
+            </a>
+            <a class="text-decoration-none" id="shoppingbuttonMobile" href="#">
+              <i class="fa fa-shopping-bag me-3 text-dark"></i>
+            </a>
+          </div>
+        </div>
+        <div class="position-fixed w-75 bg-white h-100 top-0 start-0" id="mobile-menu">
+          <div id="hamburger-cross" class="d-flex justify-content-end align-items-center py-2">
+            <i class="fa fa-2x fa-plus me-3 "></i>
+          </div>
+          <div class="menus">
+            <ul class="d-flex flex-column ps-2 mb-0 mt-4">
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./reservation.html"
+                  >Reservation</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./menu.html"
+                  >Menu</a
+                >
+              </li>
+              <li class="list-unstyled py-2">
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="search-bar d-none" id="search-container">
+      <div class="close-btn" id="search-close-btn">
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="search-bar-wrapper">
+        <input type="search" placeholder="Enter any text here..." />
+        <div class="search-button">
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopping-cart">
+      <div class="shopping-cart-header d-flex justify-content-between">
+        <h2>Review your Cart</h2>
+        <i class="fa fa-close"></i>
+      </div>
+      <div class="shopping-cart-body">
+        <div class="row shopping-cart-item d-flex justify-content-between">
+          <div class="col-2 d-flex align-items-center">
+            <img src="./assets/images/product-2a.jpg" alt="">
+          </div>
+          <div class="col-8">
+            <h3>The Cracker Barrel's Country Boy Breakfast</h3>
+            <div class="shopping-cart-counter">
+              <i class="fa fa-minus"></i>
+              <span>1</span>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div class="col-2 item-price d-flex align-items-end">
+            <p class="mb-0 text-center">$ 25.0</p>
+          </div>
+        </div>
+        <div class="row shopping-cart-item d-flex justify-content-between">
+          <div class="col-2 d-flex align-items-center">
+            <img src="./assets/images/product-2b.jpg" alt="">
+          </div>
+          <div class="col-8">
+            <h3>Old Timer's Meat Breakfast</h3>
+            <div class="shopping-cart-counter">
+              <i class="fa fa-minus"></i>
+              <span>1</span>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div class="col-2 item-price d-flex align-items-end">
+            <p class="mb-0 text-center">$ 12.0</p>
+          </div>
+        </div>
+        <div class="row shopping-cart-item d-flex justify-content-between">
+          <div class="col-2 d-flex align-items-center">
+            <img src="./assets/images/product-2c.jpg" alt="">
+          </div>
+          <div class="col-8">
+            <h3>Uncle Herschel's Favorite</h3>
+            <div class="shopping-cart-counter">
+              <i class="fa fa-minus"></i>
+              <span>1</span>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div class="col-2 item-price d-flex align-items-end">
+            <p class="mb-0 text-center">$ 25.0</p>
+          </div>
+        </div>
+        <div class="row shopping-cart-item d-flex justify-content-between">
+          <div class="col-2 d-flex align-items-center">
+            <img src="./assets/images/product-2d.jpg" alt="">
+          </div>
+          <div class="col-8">
+            <h3>Grandpa's Country Fried Breakfast</h3>
+            <div class="shopping-cart-counter">
+              <i class="fa fa-minus"></i>
+              <span>1</span>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div class="col-2 item-price d-flex align-items-end">
+            <p class="mb-0 text-center">$ 30.0</p>
+          </div>
+        </div>
+      </div>
+      <div class="shopping-cart-footer">
+        <div class="d-flex justify-content-between px-3 py-2">
+          <div>
+            <h2 class="mb-0">Subtotal</h2>
+            <p class="mb-0">Shipping & taxes calculated at checkout</p>
+          </div>
+          <div class="d-flex align-items-end">
+            <p class="footet-total-price mb-0">$ 92.0</p>
+          </div>
+        </div>
+          <div class="d-flex justify-content-between px-2">
+            <div class="footer-checkout">
+              <div class="anim-layer"></div>
+              <a href="#">Checkout</a>
+            </div>
+            <div class="footer-shopping">
+              <div class="anim-layer"></div>
+              <a href="#">Continue Shopping</a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <main class="menu-page">
+        <section class="page-banner d-flex align-items-center">
+          <div class="container"> 
+            <div class="row">
+              <div class="banner-content">
+                <h2 class="text-white display-3 text-center" data-aos="fade-right" data-aos-delay="3000">Menu</h2>
+                <div class="divider" data-aos="fade-up-right" data-aos-delay="3000">
+                    <div class="dot mb-2"></div>
+                </div>
+                <p class="text-center">The various dishes are waiting for your coming to enjoy its</p>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="our-menu pt-5 my-5">
+            <div class="container">
+                <div class="row" data-aos="fade-right">
+                    <h2 class="text-center display-6 fw-bold">Breakfast Time</h2>
+                    <div class="menu-line d-flex justify-content-center align-items-center">
+                        <span></span>
+                    </div>
+                </div>
+          <div class="row  position-relative">
+            <div data-aos="fade-left" class="slider slider-indicators-wrapper justify-content-center">
+              <div class="slider-indicators">
+                <div class="indicators-icon active text-center">
+                  <i class="fas fa-drumstick-bite fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Meats
+                  </h5>
+                </div>
+              </div>
+              <div class="slider-indicators">
+                <div class="indicators-icon text-center">
+                  <i class="fas fa-drumstick-bite fa-2x"></i>
+                </div>
+				<div class="indicators-title text-center">
+                  <h5>
+                    Chicken
+                  </h5>
+                </div>
+              </div>
+              <div class="slider-indicators">
+                <div class="indicators-icon text-center">
+                  <i class="fas fa-fish fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Fish
+                  </h5>
+                </div>
+              </div>
+              <div class="slider-indicators">
+                <div class="indicators-icon text-center">
+                  <i class="fas fa-utensils fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Mixed Grill
+                  </h5>
+                </div>
+              </div>
+              <div class="slider-indicators">
+                <div class="indicators-icon text-center">
+                  <i class="fas fa-bread-slice fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Baked Goods
+                  </h5>
+                </div>
+              </div>
+              <div class="slider-indicators">
+                <div class="indicators-icon text-center">
+                  <i class="fas fa-cocktail fa-2x"></i>
+                </div>
+                <div class="indicators-title text-center">
+                  <h5>
+                    Drink
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="our-menus" class="slider" data-aos="fade-up">
+                <div>
+                  <div class="row my-5 py-3">
+                  <div class="col-lg-5">
+                    <div class="pb-5 pb-lg-0">
+                      <img width="90%" src="./assets/images/menu-slider-dinner.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Mansaf Meat</h5>
+                        <p>A traditional Jordanian dish served with rice and tender meat cooked in rich Jameed yogurt sauce for an authentic taste experience </p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">tl</span>
+                          3000.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Haneeth Meat</h5>
+                        <p>Slow-cooked and seasoned Yemeni-style tender meat, offering a rich flavor and aromatic delight </p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">tl</span>
+                          550.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Hadramout Meat</h5>
+                        <p>A famous Yemeni dish featuring a flavorful combination of spiced meat and rice, delivering a unique culinary experience </p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">tl</span>
+                          550.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Meat Mandi</h5>
+                        <p>Smoked and marinated meat cooked over charcoal, paired with spiced rice for a truly authentic Yemeni taste.</p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">tl</span>
+                          550.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+					<div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Meat Biryani</h5>
+                        <p>A delightful dish of meat and rice infused with premium Indian spices for a rich, spicy flavor.</p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">tl</span>
+                         550.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+					<div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Meat Buram</h5>
+                        <p>A unique Yemeni specialty featuring meat cooked in a sealed pot with aromatic spices to enhance its rich flavors.</p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">tl</span>
+                          550.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item-wrapper d-flex justify-content-between">
+                      <div class="item-left">
+                        <h5>Zurbian Meat</h5>
+                        <p>Tender meat cooked with rice and Indian-inspired spices, offering a perfect balance of traditional and modern flavors. </p>
+                      </div>
+                      <div class="item-right">
+                        <span class="item-price">
+                        <span class="price-symbol">tl</span>
+                         550.0</span>
+                        <div class="item-btn">
+                          <a href="#">Order</a>
+                        </div>	
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row my-5 py-3 ">
+                    <div class="col-lg-5">
+                      <div class="pb-5 pb-lg-0">
+                        <img width="90%" src="./assets/images/menu-slider-chicken.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chicken Mandi</h5>
+                          <p>A traditional dish of slow-cooked chicken, marinated with aromatic spices, and served with fragrant rice for a complete Yemeni experience</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            280.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chicken Haneeth</h5>
+                          <p>Deliciously tender chicken cooked with a blend of spices over low heat, offering a mouthwatering taste of Yemeni flavor </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                           280.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chicken Zurbian</h5>
+                          <p>Juicy chicken cooked with rice and exotic spices, combining the best of Middle Eastern and Indian flavors</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                           280.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chicken Mthbi</h5>
+                          <p>Aromatic chicken cooked with traditional spices over an open flame, offering a smoky flavor with a tender bite.</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                           280.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Pressed Chicken</h5>
+                          <p>Tender chicken cooked under pressure with a blend of aromatic spices, offering a rich and flavorful experience that melts in your mouth.</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            280.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chicken Biryani</h5>
+                          <p>Fragrant rice and succulent chicken cooked with rich Indian spices for a vibrant, spicy flavor experience </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                          280.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row my-5 py-3 ">
+                    <div class="col-lg-5">
+                      <div class="pb-5 pb-lg-0">
+                        <img width="90%" src="./assets/images/menu-slider-lunch.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Moffi Fish (Plain - with Rice)</h5>
+                          <p>A delicious fish dish served either plain or with fragrant rice, offering a fresh and light seafood experience </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            450.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Salmon Fish (Plain - with Rice)</h5>
+                          <p>Tender and flavorful salmon, served either plain or with rice, perfect for those seeking a healthy, delicious meal </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            450.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Roasted Shrimp</h5>
+                          <p>Succulent shrimp roasted to perfection, offering a crispy exterior and tender inside with a flavorful seasoning. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            30.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Fish Salona</h5>
+                          <p>A traditional fish stew made with fresh fish, cooked in a flavorful broth with vegetables and spices for a comforting taste </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            350.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Fish Aqda</h5>
+                          <p>Fresh fish cooked with a special blend of spices, creating a unique, aromatic dish that will tantalize your taste buds </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            300.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Shrimp Salona</h5>
+                          <p>Delicious shrimp cooked in a rich, aromatic broth with a blend of spices and vegetables, delivering a savory seafood experience. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            450.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+				 <div>
+                  <div class="row my-5 py-3 ">
+                    <div class="col-lg-5">
+                      <div class="pb-5 pb-lg-0">
+                        <img width="90%" src="./assets/images/menu-slider-aqda.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Meat Aqda</h5>
+                          <p>Tender meat cooked with a special blend of spices, creating a rich and flavorful dish that will satisfy your cravings </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            350.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chicken Aqda</h5>
+                          <p>Succulent chicken cooked with aromatic spices, delivering a delicious and savory dish that's full of flavor </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            250.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Mixed Vegetables</h5>
+                          <p>A healthy mix of seasonal vegetables, perfectly cooked to retain their natural flavors and nutrients. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            160.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Plain Okra</h5>
+                          <p>Fresh okra cooked simply to highlight its natural texture and flavor, ideal for a light, satisfying dish.</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            200.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Okra with Chicken</h5>
+                          <p>Tender chicken and fresh okra cooked together with spices for a rich and hearty flavor. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            300.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Okra with Meat</h5>
+                          <p>Juicy meat and okra simmered in a flavorful broth, offering a combination of savory meat and tender vegetables</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            350.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Mixed Saltah</h5>
+                          <p>A traditional Yemeni stew made with a blend of meat, vegetables, and spices, creating a rich and flavorful dish served with flatbread.</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            380.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Saltah</h5>
+                          <p>A traditional Yemeni stew made with meat, vegetables, and spices, offering a unique and comforting taste. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            380.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Fahsa</h5>
+                          <p>A traditional Yemeni stew made with tender shredded meat, fenugreek, and rich spices, served sizzling hot for a hearty and flavorful meal. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            400.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Meat Salona</h5>
+                          <p>A hearty meat stew cooked in a flavorful broth with a mix of vegetables and spices, perfect for a comforting meal</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            350.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Chicken Salona</h5>
+                          <p>Delicious chicken cooked in a savory broth with vegetables and spices, offering a warm and satisfying taste</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            300.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row my-5 py-3 ">
+                    <div class="col-lg-5">
+                      <div class="pb-5 pb-lg-0">
+                        <img width="90%" src="./assets/images/menu-slider-dessert.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Areekah</h5>
+                          <p>A traditional Yemeni dessert made from soft bread, dates, and spices, perfect for a warm and comforting treat </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            200.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Royal Areekah</h5>
+                          <p>A luxurious take on the classic Areekah, enriched with cream, honey, and nuts for a decadent flavor. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            250.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Masoub</h5>
+                          <p>A beloved Yemeni dish combining mashed bread, bananas, and cream, offering a rich and satisfying flavor </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            200.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Royal Masoub</h5>
+                          <p>An upgraded version of the classic Masoub, topped with cream, honey, and nuts for an indulgent experience </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            230.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Date Fattah</h5>
+                          <p>A delightful dish of layered bread and dates, providing a unique and sweet flavor combination. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Date Fattah with Honey</h5>
+                          <p>A sweeter version of the Date Fattah, enhanced with natural honey for a rich and luscious taste. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            160.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Banana Fattah</h5>
+                          <p>A flavorful combination of layered bread and bananas, offering a sweet and satisfying dessert </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Banana Fattah with Honey</h5>
+                          <p>A delightful Banana Fattah drizzled with honey, creating a perfectly balanced and indulgent treat </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            180.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Honey Fattah</h5>
+                          <p>A delightful dish of layered bread soaked in natural honey, offering a rich and indulgent dessert </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            160.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Mulawah Bread (Small - Large)</h5>
+                          <p>Traditional Yemeni flatbread, golden and flaky, perfect to complement any meal. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            60.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Rutab Bread (Small - Large - With Honey)</h5>
+                          <p>A soft and tender Yemeni bread, available plain or drizzled with honey for a sweet twist </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            60.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+				<div>
+                  <div class="row my-5 py-3 ">
+                    <div class="col-lg-5">
+                      <div class="pb-5 pb-lg-0">
+                        <img width="90%" src="./assets/images/menu-slider-authority.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Eastern Salad</h5>
+                          <p>A mix of finely chopped fresh vegetables like cucumber, tomato, and onion, enhanced with a drizzle of lemon juice, olive oil, and a pinch of salt for an authentic Eastern flavor</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            10.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Fattoush Salad</h5>
+                          <p>Toasted bread slices combined with crispy vegetables such as lettuce, tomato, cucumber, parsley, and topped with a tangy sumac and lemon dressing. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Shibam Mandi Salad</h5>
+                          <p>A unique blend of spiced Mandi rice mixed with fresh local vegetables and special seasoning for a flavorful touch </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            250.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Tabbouleh</h5>
+                          <p>A classic Lebanese dish made with finely chopped parsley, tomatoes, bulgur, lemon juice, and pure olive oil </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Arugula Salad</h5>
+                          <p>Fresh arugula leaves paired with slices of onion, cherry tomatoes, and finished with a touch of olive oil and lemon. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Red Sahawiq</h5>
+                          <p>A Yemeni spicy sauce made from crushed tomatoes, hot chili peppers, garlic, and lemon for a rich and fiery taste. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            9.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Green Sahawiq</h5>
+                          <p>A delicious blend of fresh cilantro, hot chili peppers, garlic, and lemon, perfect for adding a burst of flavor to any dish </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            15.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div> 
+                      
+                    </div>
+                  </div>
+                </div>
+				<div>
+                  <div class="row my-5 py-3 ">
+                    <div class="col-lg-5">
+                      <div class="pb-5 pb-lg-0">
+                        <img width="90%" src="./assets/images/menu-slider-Drink.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                         <h5>Cocktail Juice</h5>
+                          <p>A vibrant blend of mixed fruits creating a refreshing, colorful drink</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            180.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Avocado Juice</h5>
+                          <p>Smooth and creamy avocado blended to perfection </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            170.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Avocado with Milk</h5>
+                          <p>Fresh avocado mixed with milk for a rich and silky texture. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            180.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Avocado with Milk and Nuts</h5>
+                          <p>A luxurious mix of avocado, milk, and a generous topping of crunchy nuts</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            200.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Orange Juice</h5>
+                          <p>Freshly squeezed orange juice bursting with natural sweetness and tanginess.. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Pineapple Juice</h5>
+                          <p>A tropical delight made from ripe, juicy pineapples. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Strawberry Juice</h5>
+                          <p>Fresh strawberries blended into a refreshing, naturally sweet drink </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            160.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Strawberry with Milk</h5>
+                          <p>Creamy milk paired with sweet strawberries for a delightful flavor </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            170.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Strawberry with Banana and Milk</h5>
+                          <p>A rich smoothie combining strawberries, bananas, and milk. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            170.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Banana Juice</h5>
+                          <p>A creamy drink made from ripe bananas. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            130.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Banana with Milk	</h5>
+                          <p>A classic blend of banana and milk for a smooth and comforting taste</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div> 
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Mango Juice</h5>
+                          <p>A tropical classic made with sweet, ripe mangoes. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            160.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Mango with Milk</h5>
+                          <p>Creamy milk mixed with mango for an indulgent drink. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            170.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Special Cocktail Flavor</h5>
+                          <p>A signature mix of seasonal fruits with a unique flavor twist</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            180.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Watermelon Juice</h5>
+                          <p>A hydrating and refreshing juice from juicy watermelons. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Melon Juice</h5>
+                          <p>Sweet and fragrant juice made from fresh melons </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Melon with Milk</h5>
+                          <p>A creamy and refreshing mix of melon and milk. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            160.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Kiwi Juice</h5>
+                          <p>A tangy and refreshing drink made from fresh kiwi. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Fruit Salad Plate</h5>
+                          <p>A colorful and nutritious mix of freshly cut seasonal fruits. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            200.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Polo Drink</h5>
+                          <p>A chilled, refreshing beverage with a special flavor </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            180.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Shibam Arayes</h5>
+                          <p>A unique and flavorful combination drink with a local twist.</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            200.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Avocado with Milk and Honey</h5>
+                          <p>A rich blend of avocado, milk, and a drizzle of natural honey. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            185.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Ice Service</h5>
+                          <p>A chilled serving of shaved ice for extra refreshment. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            25.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Guava Juice</h5>
+                          <p>A tropical favorite made from ripe, sweet guavas.</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            120.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div> 
+					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Shibam Emperor</h5>
+                          <p>A premium fruit cocktail with a touch of Shibam's signature taste. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            300.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Medium Fruit Salad Plate</h5>
+                          <p>A medium-sized serving of freshly prepared fruit salad. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            300.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Large Fruit Salad Plate</h5>
+                          <p>A large, shareable platter of colorful, fresh fruits</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            400.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div>
+   					  <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Plain Lemon</h5>
+                          <p>Classic, zesty lemon juice for a refreshing treat. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            150.0</span>
+                          <div class="item-btn">
+                            <a href="#">Order</a>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="chef-choise pt-3 pb-5">
+          <div class="container py-5">
+            <div class="row" data-aos="fade-right">
+              <div class="section-title text-center pb-5">
+                <h5>Chef Choice</h5>
+                <h2 class="text-white display-6 fw-bold">Daily Special</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-none d-lg-block col-lg-6" data-aos="fade-right">
+                <img class="img-fluid" src="./assets/images/product-decorate.jpg" alt="">
+              </div>
+              <div class="col-12 col-lg-6" data-aos="fade-left">
+                <div class="chef-choise-slider ps-3">
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left d-flex flex-row">
+                      <img class="rounded-circle" src="./assets/images/product-2a.jpg" width="70px" height="70px" alt="">
+                      <div class="ps-3">
+                        <h5 class="text-white">The Cracker Barrel's Country Boy Breakfast</h5>
+                        <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                      </div>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">tl</span>
+                        25.0</span>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left d-flex flex-row">
+                      <img class="rounded-circle" src="./assets/images/product-2b.jpg" width="70px" height="70px" alt="">
+                      <div class="ps-3">
+                        <h5 class="text-white">Uncle Herschel's Favorite</h5>
+                        <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                      </div>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">tl</span>
+                        45.0</span>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left d-flex flex-row">
+                      <img class="rounded-circle" src="./assets/images/product-2c.jpg" width="70px" height="70px" alt="">
+                      <div class="ps-3">
+                        <h5 class="text-white">Grandpa's Country Fried Breakfast</h5>
+                        <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                      </div>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">tl</span>
+                        30.0</span>
+                    </div>
+                  </div>
+                  <div class="item-wrapper d-flex justify-content-between">
+                    <div class="item-left d-flex flex-row">
+                      <img class="rounded-circle" src="./assets/images/product-2d.jpg" width="70px" height="70px" alt="">
+                      <div class="ps-3">
+                        <h5 class="text-white">Old Timer's Meat Breakfast</h5>
+                        <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
+                      </div>
+                    </div>
+                    <div class="item-right">
+                      <span class="item-price">
+                      <span class="price-symbol">tl</span>
+                        12.0</span>
+                    </div>
+                  </div>
+                </div>
+                  <div class="chef-choise-icons ps-4 mt-3 mt-lg-0">
+                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    <i class="fa fa-chevron-down ms-4" aria-hidden="true"></i>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="lunch-time my-5 pb-0 pb-lg-5">
+            <div class="container">
+                <div class="row" data-aos="fade-right">
+                    <h2 class="text-center display-6 fw-bold">Lunch Time</h2>
+                    <div class="menu-line d-flex justify-content-center align-items-center">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Shakshouka</h5>
+                            <p>A vibrant dish of eggs cooked in a rich tomato and pepper sauce, infused with aromatic spices for a hearty breakfast. </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">tl</span>
+                              25.0</span>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Lamb Meat</h5>
+                            <p>Tender pieces of young lamb, slow-cooked with traditional spices to perfection, offering a flavorful experience </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">tl</span>
+                              45.0</span>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Clay Pot Foul</h5>
+                            <p>Classic Yemeni-style fava beans cooked in a clay pot, seasoned with a rich blend of spices for a comforting meal. </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">tl</span>
+                              30.0</span>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Foul Haradha with Dakka</h5>
+                            <p>Delicious fava beans served with Dakka, a tangy and spicy Yemeni sauce, for a bold flavor combination </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">tl</span>
+                              12.0</span>
+                          </div>
+                        </div>
+						 <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Lamb Meat</h5>
+                            <p>Tender pieces of young lamb, slow-cooked with traditional spices to perfection, offering a flavorful experience </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">tl</span>
+                              45.0</span>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Lamb Liver</h5>
+                            <p>Tender lamb liver, seasoned with traditional spices and cooked to perfection for a rich and hearty taste. </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">tl</span>
+                              30.0</span>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Clay Pot Beans</h5>
+                            <p>Rich and creamy beans slow-cooked in a clay pot with spices, offering a warm and comforting flavor. </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">tl</span>
+                              12.0</span>
+                          </div>
+                        </div>
+                        <div class="item-wrapper d-flex justify-content-between">
+                          <div class="item-left">
+                            <h5>Beans with Eggs</h5>
+                            <p>Classic beans cooked with scrambled eggs, creating a hearty and protein-packed meal </p>
+                          </div>
+                          <div class="item-right">
+                            <span class="item-price">
+                            <span class="price-symbol">tl</span>
+                              12.0</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Fried Eggs</h5>
+                          <p>Eggs fried to golden perfection, offering a crispy edge and a soft center for a classic breakfast option </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            25.0</span>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Sunny-Side-Up Eggs</h5>
+                          <p>Perfectly cooked eggs with a bright yolk, served sunny-side-up for a cheerful and tasty start to your day </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            45.0</span>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Liver</h5>
+                          <p>Deliciously cooked liver, seasoned with a perfect blend of spices for a tender and savory experience. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            30.0</span>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Broth Soup</h5>
+                          <p>A warm and comforting soup made with a rich, flavorful broth and spices, perfect for any time of the day.</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            12.0</span>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Dakka with Eggs</h5>
+                          <p>A delicious combination of Yemeni Dakka sauce with scrambled eggs, creating a tangy and flavorful dish </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            12.0</span>
+                        </div>
+                      </div>
+					   <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Eggs with Cheese</h5>
+                          <p>Fluffy scrambled eggs mixed with melted cheese, offering a creamy and delightful breakfast option. </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            30.0</span>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Beans with Tuna</h5>
+                          <p>A delicious combination of rich beans and tender tuna, cooked together with aromatic spices for a unique flavor</p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            12.0</span>
+                        </div>
+                      </div>
+                      <div class="item-wrapper d-flex justify-content-between">
+                        <div class="item-left">
+                          <h5>Dry Beans</h5>
+                          <p>Flavorful and spiced beans prepared dry, perfect as a side dish or a light, wholesome meal </p>
+                        </div>
+                        <div class="item-right">
+                          <span class="item-price">
+                          <span class="price-symbol">tl</span>
+                            12.0</span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe-us pb-5 mb-5">
+          <img class="d-none d-lg-block" src="./assets/images/subscribe-us.png" alt="" data-aos="fade-down-right">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2">
+              </div>
+              <div class="col-lg-8 d-flex flex-column flex-md-row align-items-lg-center">
+                <div class="content" data-aos="fade-right">
+                  <h5 class="display-6 text-black">Subcribe Us Now</h5>
+                  <p>
+                    Get more news and delicious dishes everyday from us
+                  </p>
+                </div>
+                <div class="subscribe-form d-flex ps-0 ms-0 ps-lg-5 ms-lg-5" data-aos="fade-left">
+                  <div class="input-form w-100">
+                    <input class="border-0 px-3 w-100" type="email" placeholder="Email">
+                  </div>
+                  <div class="input-button">
+                    <a class="text-decoration-none" href="#">
+                      <i class="fa fa-paper-plane"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <a href="#" id="back-to-top">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-content col-xl-8  px-4">
+            <div class="row">
+              <div class="col-lg-6 px-0">
+                <div class="logo" data-aos="fade-down-right">
+                  <a href="./index.html">
+                    <i class="fa fa-utensils me-3"></i>
+                    <h1 class="mb-0">Mandi sebam</h1>
+                  </a>
+                </div>
+              </div>
+              <div data-aos="fade-down" class="col-lg-6 pt-4 pt-lg-0 d-flex align-items-center justify-content-start justify-content-lg-end">
+                <div class="social-icons d-flex">
+                  <ul class="d-flex mb-0 ps-0">
+<li class="mx-2"><a class="text-decoration-none text-white" href="https://www.snapchat.com/add/mandisebam"><i class="fab fa-snapchat"></i></a></li> 
+<li class="mx-2"><a class="text-decoration-none text-white" href="https://www.facebook.com/mandisebam"><i class="fab fa-facebook"></i></a></li>
+<li class="mx-2"><a class="text-decoration-none text-white" href="https://www.tiktok.com/@mandisebam"><i class="fab fa-tiktok"></i></a></li> 
+<li class="mx-2"><a class="text-decoration-none text-white" href="tel:+905404017777"><i class="fab fa-whatsapp"></i></a></li>
+<li class="mx-2"><a class="text-decoration-none text-white" href="https://maps.app.goo.gl/vtcoZGJNCNrvgGtP7"><i class="fab fa-google"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-5 content-desc" data-aos="fade-right">
+              <p class="px-0">Shabam Mandi restaurant offers a unique dining experience with its authentic Yemeni dishes, served in a cozy, welcoming atmosphere. Located in the city center, it combines modern design with traditional Yemeni touches, providing customers with a perfect blend of comfort and heritage. Whether you're enjoying a meal with family or friends, Shabam Mandi is the ideal place for anyone who loves rich, flavorful cuisine.</p>
+            </div>
+            <div class="row" data-aos="fade-right">
+              <div class="d-flex flex-column flex-lg-row px-0 justify-content-between">
+                <div class="location d-flex align-items-center pe-2 py-3">
+                  <i class="fa-solid fa-location-dot text-white fa-2x border-bottom pb-2"></i>
+                  <div class="ps-3">
+                    <p class="mb-0">
+                      Emin Ali Yasin Sk. No:11, 34093  <br>
+                      Fatih, 34093 molla güarani/İstanbul
+                    </p>
+                  </div>
+                </div>
+                <div class="location d-flex align-items-center pe-2 py-3">
+                  <i class="fa-solid fa-mobile text-white fa-2x border-bottom pb-2"></i>
+                  <div class="ps-3">
+                    <p class="mb-0">
+                      (540)-401-7777 <br>
+                      (555)-167-2547
+                    </p>
+                  </div>
+                </div>
+                <div class="location d-flex align-items-center pe-2 py-3">
+                  <i class="fa-solid fa-envelope text-white fa-2x border-bottom pb-2"></i>
+                  <div class="ps-3">
+                    <p class="mb-0">
+                      admin@fooday.com <br>
+                      support@fooday.com
+                    </p>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="reservation-box" data-aos="fade-down-left">
+              <div class="reservation-wrapper">
+                <h2>Open Hour</h2>
+                <div class="reservation-date-time">
+                  <p>Tuesday: .......................... 10AM - 12AM</p>
+                  <p>Wednesday: ..................... 10AM - 12AM</p>
+                  <p>Thursday: ......................... 10AM - 12AM</p>
+                  <p>Friday: ............................... 10AM - 12AM</p>
+                  <p>Saturday: ........................... 10AM - 12AM</p>
+                  <p>Sunday: ............................. 10AM - 12AM</p>
+                  <p>Monday: ............................. 10AM - 12AM</p>
+                </div>
+                <h2 class="pb-2">Reservation Numbers</h2>
+                <h3>(540)-401-7777</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="text-center pt-4 mt-3 pt-lg-0">&copy; <span id="copyrightCurrentYear"></span> <b> Mandi sebam.</b> All rights reserved. Design by <a href="https://infinitypassage.github.io/en.html" class="fw-bold author-name">Infinity Passage</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
